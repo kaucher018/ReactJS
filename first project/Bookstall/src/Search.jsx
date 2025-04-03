@@ -2,9 +2,7 @@ import React from 'react'
 
 function Search() {
   return (
-    <div>
-      search
-    </div>
+    <input type="text" placeholder='search a book' className='mb-4 border rounded-md p-1 w-full' />
   )
 }
 

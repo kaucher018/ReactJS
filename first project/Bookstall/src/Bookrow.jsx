@@ -5,8 +5,10 @@ import Featured from './featured'
 function Bookrow({name,author}) {
   return (
     <>
-      <h1>{name}</h1>
-      <p>{author}</p>
+    <div>
+      <h1 className='font-bold'>{name}</h1>
+      <p className='text-gray-600'>{author}</p>
+      </div>
 <Featured/>
     </>
   )

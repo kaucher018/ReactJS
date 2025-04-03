@@ -4,7 +4,7 @@ import Booklist from "./Booklist"
 import './index.css'
 function stall() {
   return (
-    <div>
+    <div className="m-5">
       <Header/>
       <Search/>
       <Booklist/>

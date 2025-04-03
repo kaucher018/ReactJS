@@ -27,10 +27,10 @@ const Books=[
 
 function Booklist() {
   return (
-    <ul>
+    <ul className="p-4">
         {
             Books.map((book)=>(
-                 <li key={book.id}>
+                 <li key={book.id} className="flex items-center justify-between p-4 shadow rounded-lg m-4">
                     <Bookrow name={book.name} author={book.author} />
                   
                     </li>
