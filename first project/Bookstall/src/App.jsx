@@ -1,14 +1,17 @@
+import Bookstall from './Bookstall'
 import './index.css'
-import Stall from './stall'
+
 
 function App() {
  
 
   return (
    
-    <Stall/>
+    <Bookstall/>
      
   )
+
 }
+
 
 export default App

@@ -1,17 +1,25 @@
 import React from 'react'
 import Featured from './featured'
+import Bookdetails from './Bookdetails'
+import PropTypes from "prop-types";
+import { Book } from 'lucide-react';
 
 
-function Bookrow({name,author}) {
+function Bookrow({book,onFeatured}) {
+
   return (
-    <>
+    <div className='flex justify-between items-center'>
     <div>
-      <h1 className='font-bold'>{name}</h1>
-      <p className='text-gray-600'>{author}</p>
+     <Bookdetails name={book.name} author={book.author}/>
       </div>
-<Featured/>
-    </>
+   <Featured onFeatured={onFeatured} book={book}/>
+
+    </div>
   )
 }
+Bookrow.propTypes = {
+  book: PropTypes.object.isRequired,
+  onfeatured: PropTypes.func.isRequired,
+};
 
 export default Bookrow
